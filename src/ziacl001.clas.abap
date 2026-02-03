@@ -31,11 +31,15 @@ CLASS ziacl001 IMPLEMENTATION.
       out->write( 'no existe' ).
     ENDIF.
 
+* Constructors
     DATA(lo_instance03a) = NEW ziacl003( ).
     out->write( lo_instance03a->log ).
     DATA(lo_instance03b) = NEW ziacl003( ).
     out->write( lo_instance03b->log ).
 
+* Heritance
+    DATA(lo_instance04) = NEW ziacl004_child( ).
+    out->write( lo_instance04->get_architecture( ) ).
 
   ENDMETHOD.
 
