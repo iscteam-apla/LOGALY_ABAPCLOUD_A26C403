@@ -7,6 +7,7 @@ CLASS ziacl004_child DEFINITION INHERITING FROM ziacl004
     METHODS:
       constructor,
       get_architecture REDEFINITION.
+      "get_memory reDEFINITION.         "  no se puede REDEFINIR porque se creo como FINAL en la clase padre
 
   PROTECTED SECTION.
   PRIVATE SECTION.
